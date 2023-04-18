@@ -1,0 +1,53 @@
+body{
+    background-color: grey;
+}
+.container{
+    height: 30vh;
+    width: 30vh;
+    /* border: 2px solid green; */
+    margin: 30vh auto;
+    perspective: 60vh;
+}
+.cube{
+    height: 30vh;
+    width: 30vh;
+    transform-style: preserve-3d;
+    transform: translateZ(-15vh) rotatex(30deg);
+    position: relative;
+    transition: 1s;
+}
+.cube:hover{
+    transform: translateZ(-15vh) rotateX(180deg) rotateY(360deg);
+
+}
+.face{
+   position: absolute;
+   height: 30vh;
+   width: 30vh;
+
+}
+.front{
+    background-color: white;
+    transform: rotateY(0deg) translateZ(15vh);
+
+}
+.back{
+    background-color: yellow;
+    transform: rotateY(180deg) translateZ(15vh);
+}
+.right{
+    background-color: blue;
+    transform: rotateY(90deg) translateZ(15vh);
+}
+.left{
+    background-color: green;
+    transform: rotateY(-90deg) translateZ(15vh);
+}
+.top{
+    background-color: orangered;
+    transform: rotateX(90deg) translateZ(15vh);
+}    
+.bottom{
+    background-color: red;
+    transform: rotateX(-90deg) translateZ(15vh);
+}
