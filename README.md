@@ -1,2 +1,2 @@
 # 3D-cube
-I have a made a 3D cube with CSS only. You can rotate it by simply hovering on it.
+A three face 3D cube for the homepage, header and loading animation for dynamic hybrid applications, which rotates on hovering.
